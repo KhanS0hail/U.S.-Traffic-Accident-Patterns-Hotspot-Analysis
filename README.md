@@ -1,63 +1,48 @@
-# Prodigy InfoTech Data Science Internship Task 5
+# U.S. Traffic Accident Patterns & Hotspot Analysis
 
-Analyze traffic accident data to identify patterns related to road conditions, weather, and time of day. Visualize accident hotspots and contributing factors.
+A large-scale spatio-temporal and exploratory data analysis (EDA) project mapping nationwide traffic accident hotspots, tracking yearly trends, and identifying environmental risk factors.
 
-### Task Completed
+## 📌 Project Overview
+Traffic accidents represent a critical public safety and urban planning challenge. This project analyzes nationwide traffic accident records to identify hotspots and understand how external conditions—such as weather, time of day, and location factors—affect accident frequency and severity.
 
-This submission fulfills the requirements of Task 5, which was to perform data analysis on traffic accident data, identify patterns related to contributing factors, and visualize accident hotspots.
+![US Traffic Accident Geospatial Hotspots and Environmental Factors](./ds5.png)
 
-### Methodology:
+## 🚀 Key Features
+* **Geospatial Hotspot Mapping:** Plots geographic coordinate distributions (Latitude/Longitude) to isolate high-risk zones across different states.
+* **Environmental Impact Analysis:** Correlates accident frequencies with weather conditions (e.g., rain, snow, fog, clear skies).
+* **Temporal Trend Analysis:** Compares historical accident data across different years and months to detect trends.
+* **Severity Profiling:** Breaks down accident severity levels and details how environmental factors correlate with higher-severity events.
 
-- **Data Acquisition:** Collected traffic accident data from [Kaggle](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents) for analysis.
-- **Data Cleaning:** Handled missing data and ensured that the dataset was in a usable format for analysis.
-- **Exploratory Data Analysis (EDA):** Performed EDA to understand accident trends by city, state, weather, and year.
-- **Data Visualization:** Created visualizations to highlight accident patterns and identify contributing factors.
+## 🛠️ Tech Stack & Libraries
+* **Language:** Python
+* **Data Processing & Manipulation:** Pandas, NumPy
+* **Data Visualization & GIS Plotting:** Matplotlib, Seaborn
 
-### Visualizations:
+## 📈 Methodology & Pipeline
+1. **Data Acquisition:** Sourced nationwide traffic event records from the [Kaggle US Accidents Dataset](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents).
+2. **Data Cleaning & Wrangling:**
+   * Parsed timestamps into distinct Year, Month, Day, and Hour fields.
+   * Handled missing spatial data and filtered outliers to ensure geographical plotting accuracy.
+3. **Exploratory Data Analysis (EDA):**
+   * Ranked states and cities by total accident volume to locate high-density zones.
+   * Analyzed accident distributions across categorical parameters (Weather, Severity).
+4. **Data Visualization:**
+   * Created spatial scatter plots based on geographical coordinates.
+   * Constructed severity pie charts, environmental factor histograms, and state-by-state comparisons.
 
-- **Weather Conditions During Accidents:** Created a bar plot to display the distribution of weather conditions during accidents to identify the most common conditions in which accidents occurred.
-  
-- **Accident Trends by Year:** Visualized the number of accidents per year to observe the trend in traffic accidents over time.
+## 💡 Key Insights
+* **Geographic Clusters:** Major metropolitan zones like Miami and high-density states like California reported the highest accident volumes, corresponding to high traffic concentration.
+* **Environmental Findings:** Interestingly, the majority of recorded accidents occurred during **fair weather** conditions. This suggests that human error, high traffic density, or driver distraction might play a more significant role in accident occurrences than poor weather conditions.
+* **Severity Distribution:** Most accidents were classified as Severity Level 2 (moderate impact/delays), indicating that while traffic accidents are frequent, severe/catastrophic crashes represent a smaller fraction of the dataset.
 
-- **State-wise Accident Distribution:** Developed a bar plot showing the states with the most and least number of accidents to understand geographic accident patterns.
-  
-- **City-wise Accident Distribution:** Visualized the top 10 cities with the highest and lowest accident counts to compare traffic accident severity and density by city.
+## 📂 Project Structure
+```text
+├── Traffic_accident_data.ipynb  # Spatial-temporal analytics and plotting notebook
+├── ds5.png                      # Saved geospatial and environmental analysis plots
+└── README.md                    # Project documentation
+```
 
-- **Accident Severity Distribution:** Created a pie chart to illustrate the distribution of accident severity levels, categorizing them into four severity levels (1, 2, 3, and 4) for a clearer understanding of accident severity.
-
-- **Accident Location Scatter Plot:** Created a scatter plot showing accident locations by latitude and longitude, categorized by state and accident severity.
-
-### Key Findings from Traffic Data Analysis:
-
-1. **City-wise Accident Distribution:** 
-   - **Miami** recorded the highest number of accidents, likely due to its dense population and high traffic volumes.
-   - Cities like **Star Junction** and **Stromsburg** reported the fewest accidents, corresponding to their smaller populations and lighter traffic.
-
-2. **State-wise Accident Distribution:**
-   - **California** had the most accidents, consistent with its extensive road network and high population.
-   - **South Dakota (SD)** had the fewest accidents, likely due to its lower population and traffic density.
-
-3. **Yearly Accident Trends:** 
-   - The year **2021** recorded the highest number of accidents, suggesting either increased traffic or better reporting systems during that period.
-
-4. **Accident Severity Levels:**
-   - Most accidents were classified as **severity level 2**, indicating that while accidents were frequent, the majority were not highly severe.
-
-5. **Weather Conditions During Accidents:** 
-   - A majority of accidents occurred in **fair weather**, indicating that factors other than poor weather, such as driver behavior or traffic conditions, were more influential in causing accidents.
-
-### Tools and Libraries:
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-
-### Dataset Source:
-
-- The dataset used for this analysis can be found at: [Kaggle - US Accidents Data](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
-
-### Contact:
-
-- [Khan Sohail (LinkedIn)](https://www.linkedin.com/in/khan-sohail-386b2027a)
-- Gmail: ks646397@gmail.com
+## 👤 Author
+* **Khan Sohail**
+  * [LinkedIn](https://www.linkedin.com/in/khan-sohail-386b2027a)
+  * Email: ks646397@gmail.com
