@@ -5,8 +5,6 @@ A large-scale spatio-temporal and exploratory data analysis (EDA) project mappin
 ## 📌 Project Overview
 Traffic accidents represent a critical public safety and urban planning challenge. This project analyzes nationwide traffic accident records to identify hotspots and understand how external conditions—such as weather, time of day, and location factors—affect accident frequency and severity.
 
-![US Traffic Accident Geospatial Hotspots and Environmental Factors](./ds5.png)
-
 ## 🚀 Key Features
 * **Geospatial Hotspot Mapping:** Plots geographic coordinate distributions (Latitude/Longitude) to isolate high-risk zones across different states.
 * **Environmental Impact Analysis:** Correlates accident frequencies with weather conditions (e.g., rain, snow, fog, clear skies).
@@ -37,9 +35,8 @@ Traffic accidents represent a critical public safety and urban planning challeng
 
 ## 📂 Project Structure
 ```text
-├── Traffic_accident_data.ipynb  # Spatial-temporal analytics and plotting notebook
-├── ds5.png                      # Saved geospatial and environmental analysis plots
-└── README.md                    # Project documentation
+├── us_traffic_accident_analysis.ipynb # Spatial-temporal analytics and plotting notebook
+└── README.md                          # Project documentation
 ```
 
 ## 👤 Author
